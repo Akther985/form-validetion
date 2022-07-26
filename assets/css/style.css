@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --lg-lightcolor: linear-gradient( #74ebd5, #9face6);
+    --lg-color: linear-gradient(to left, #74ebd5, #9face6);
+}
+body{
+    background-image: url(10848794.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    height: auto;
+}
+.container{    
+    padding: 0px;
+    background-color:#eeedee;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(100vw - 65vw);
+   
+
+}
+.header {
+    background: linear-gradient( #74ebd5, #9face6);
+    padding: 30px ;
+
+}
+.header h2 {
+    width: 100%;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center; 
+
+}
+.form{
+    padding: 30px;
+}
+.form-control{
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;    
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 12px
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top: 60px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    left: 0;    
+    visibility: hidden;
+}
+.form-control.error small{
+       visibility: visible;
+}
+
+.sub_btn{
+    background: linear-gradient( #74ebd5, #9face6);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px ;
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+
+}
+.sub_btn:hover{
+    background: linear-gradient( #9face6, #74ebd5);
+    
+}
+@media (max-width:998px){
+    .container{
+        width: calc(100vw - 35vw);
+        max-width: 100%;
+    }
+}
+
